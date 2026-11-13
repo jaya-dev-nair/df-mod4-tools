@@ -5,7 +5,7 @@ This project explores core digital forensics techniques, including hashing, evid
 ## Exercise 1: Autopsy - Import Hash Database (Known Files)
 
 - Verification screenshot: ![Exercise 1 verification screenshot](images/exercise-1-verification.png)
-- Write-up notes: Explain why importing a known-file hash database is useful in digital forensics.
+- Importing the National Software Reference Library (NSRL) database of "Known" cryptographic hashes allows Autopsy to automatically identify and filter out standard operating system components, common applications, and benign utility files. Because these baseline files are cryptographically verified as unaltered commercial or open-source software, investigators can safely exclude them from manual review. This dramatically reduces investigative noise and shrinks the volume of data, allowing examiners to focus their time on unknown, altered, or potentially incriminating user files.
 
 ## Exercise 2: Autopsy - Create Hash Database (Evidence Files)
 
