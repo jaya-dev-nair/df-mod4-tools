@@ -10,7 +10,7 @@ This project explores core digital forensics techniques, including hashing, evid
 ## Exercise 2: Autopsy - Create Hash Database (Evidence Files)
 
 - Verification screenshot: ![Exercise 2 verification screenshot](images/exercise-2-verification.png)
-- Write-up notes: Explain why creating a hash database for evidence files is useful in digital forensics.
+- Building a custom "Notable" hash database allows investigators to catalog the exact cryptographic fingerprints of confirmed illicit or evidentiary files discovered during an examination. Once compiled, this hash set can be deployed across additional workstations, servers, or mobile devices on a network to automatically flag matching files—even if a suspect has renamed the files or altered their extensions. This targeted hash-matching approach accelerates multi-device triage and prevents examiners from having to manually inspect every drive for known contraband or intellectual property leaks.
 
 ## Exercise 3: Hex Editor - Match File Remnants
 
