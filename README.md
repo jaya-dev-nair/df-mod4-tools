@@ -20,7 +20,7 @@ This project explores core digital forensics techniques, including hashing, evid
 ## Exercise 4: Simple Encryption
 
 - Verification screenshot: ![Exercise 4 verification screenshot](images/exercise-4-verification.png)
-- Write-up notes: Explain why understanding simple encryption is useful in digital forensics.
+- Using CyberChef, plaintext from evidence.txt was obscured with a polyalphabetic Vigenère cipher into nothing.txt and cleanly restored into recovered.txt using the matching secret keyword. In digital forensics, suspects frequently hide sensitive files or strings using low-level bit manipulation—such as bitwise XOR or bit-shifting—which transforms readable ASCII characters into unrecognizable binary patterns that bypass standard keyword searches. When reversing or testing bit-shift obfuscation within a fixed-width byte or register, shifting bits left before shifting right ensures high-order bits are moved out and back cleanly within the available bit boundary (or without truncating the least-significant bits against the right edge first), preventing permanent data loss during transformation.
 
 ## Optional Bonus: Crack a Passcode with a Rainbow Table
 
