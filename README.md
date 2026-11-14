@@ -25,4 +25,4 @@ This project explores core digital forensics techniques, including hashing, evid
 ## Optional Bonus: Crack a Passcode with a Rainbow Table
 
 - Verification screenshot: ![Optional bonus verification screenshot](images/optional-bonus-verification.png)
-- Write-up notes: Explain why rainbow tables are useful to understand in digital forensics.
+- A rainbow table trades upfront computation and storage space for near-instant lookup speed by precomputing cryptographic hashes for every possible plaintext value within a constrained keyspace. Because all three target passcodes were known to be 6-digit numbers starting with 7, generating the SHA-256 digests for the reduced range of 700000 through 799999 (accounting for potential trailing newline characters) allowed immediate identification of the original passcodes for Erik, Logan, and Cody. This exercise demonstrates why short, predictable numeric passcodes without cryptographic salting remain vulnerable to precomputed lookup attacks even when using strong hashing algorithms like SHA-256.
