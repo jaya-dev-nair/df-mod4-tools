@@ -15,7 +15,7 @@ This project explores core digital forensics techniques, including hashing, evid
 ## Exercise 3: Hex Editor - Match File Remnants
 
 - Verification screenshot: ![Exercise 3 verification screenshot](images/exercise-3-verification.png)
-- Write-up notes: Explain why matching file remnants in a hex editor is useful in digital forensics.
+- When a file is deleted, the operating system removes its file-system directory pointer while leaving the underlying raw data clusters intact in unallocated space until they are eventually overwritten. Because a partially overwritten file will no longer match its original whole-file hash, computing cryptographic hashes of individual 512-byte sectors (such as bytes 0x00 through 0x1FF) creates granular fingerprints of surviving file headers and fragments. Scanning unallocated disk space against these sector-level hashes enables investigators to reliably identify and prove the prior existence of deleted evidence remnants.
 
 ## Exercise 4: Simple Encryption
 
